@@ -10,6 +10,8 @@
 :root {
   --primary-color: #0b2027;
   --secondary-color: #f6f1d1;
+  --list-color: #ffffff19;
+  --button-hover: #f6f1d119;
 }
 
 html {
@@ -67,7 +69,7 @@ html {
 
 .list__task {
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--list-color);
   color: var(--secondary-color);
 
   margin-bottom: 0.5rem;
@@ -107,7 +109,7 @@ html {
 .list__concluir:hover,
 .list__btn:hover {
   color: var(--secondary-color);
-  background: rgba(246, 241, 209, 0.1);
+  background: var(--button-hover);
 }
 
 .list__task.done .list__concluir {
