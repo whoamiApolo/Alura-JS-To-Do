@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #0b2027;
+  --secondary-color: #f6f1d1;
+  --list-color: #ffffff19;
+  --button-hover: #f6f1d119;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.todo {
+  background: var(--primary-color);
+  padding: 1.6rem;
+  width: 50rem;
+  height: 50rem;
+
+  overflow-y: scroll;
+}
+
+.todo__title {
+  border-bottom: 0.1rem solid rgba(246, 241, 209, 0.5);
+  font-size: 3.2rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.6rem 0;
+  height: 4.25rem;
+}
+
+.form__input {
+  background: var(--secondary-color);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  width: 75%;
+}
+
+.form__button {
+  border: none;
+  background: var(--secondary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 8rem;
+  width: 25%;
+}
+
+.list__task {
+  list-style: none;
+  background-color: var(--list-color);
+  color: var(--secondary-color);
+
+  margin-bottom: 0.5rem;
+  padding: 0.8rem /* 0 .8rem */ 1.6rem;
+}
+
+.list__description {
+  font-size: 1.4rem;
+  padding-bottom: 0.8rem;
+  text-align: justify;
+  color:var(--secondary-color);
+}
+
+.list__description::first-letter {
+  text-transform: uppercase;
+}
+
+.list__concluir,
+.list__btn {
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  width: 48.8%;
+  margin: 0 1rem;
+  height: 4.25rem;
+  text-transform: capitalize;
+}
+
+.list__concluir:first-of-type {
+  margin: 0;
+}
+
+.list__btn:nth-child(1n) {
+  margin-right: 0;
+}
+
+.form__button:hover,
+.list__concluir:hover,
+.list__btn:hover {
+  color: var(--secondary-color);
+  background: var(--button-hover);
+}
+
+.list__task.done .list__concluir {
+  background-color: #46494c;
+  color: var(--secondary-color);
+}
+
+.list__task.done .list__description {
+  text-decoration: line-through;
+}
