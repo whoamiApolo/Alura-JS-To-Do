@@ -10,7 +10,7 @@
 </p>
 
 # Licença
-<p>Este projeto está sob a licença MIT - veja o arquivo <a href="https://github.com/whoamiApolo/Alura-JS-To-Do/blob/main/LICENSE.md" target="_blank">LICENSE.MD</a> para detalhes.
+<p>Este projeto está sob a licença MIT - veja o arquivo <a href="https://github.com/whoamiApolo/Alura-JS-To-Do/blob/main/LICENSE.md" target="_blank">LICENSE.md</a> para detalhes.
   </p>
 
 <p>Feito com &hearts; por Apolinário.</p>
